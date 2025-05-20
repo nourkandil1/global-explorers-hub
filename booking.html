@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Now</title>
+    <link rel="stylesheet" href="assignment.css">
+
+    <script>
+        function updatePrice() {
+            var selected = document.getElementById("package").value;
+            var price = "";
+
+            if (selected == "Paris Delight") price = "12,600";
+            else if (selected == "Dubai Adventure") price = "8,400";
+            else if (selected == "Bali Getaway") price = "11,100";
+            else price = "--";
+
+            document.getElementById("price").innerHTML = "Price: " + price + " AED";
+        }
+    
+        function confirmBooking() {
+            alert("Booking confirmed! Thank you for choosing Global Explorers Hub.");
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Global Explorers Hub</h1>
+        <nav class="navbar">
+            <a href="home.html" target="_blank">Home</a>
+            <a href="package.html" target="_blank">Holiday Packages</a>
+            <a href="booking.html" target="_blank">Book Now</a>
+        </nav>
+    </header>
+    <main>
+        <div class="booking">
+            <h2> Book your Stay!</h2>
+            <form onsubmit="confirmBooking(); return false;">
+                <label>First Name:</label><br>
+                <input type="text" name="firstname" required><br>
+
+                <label>Last Name:</label><br>
+                <input type="text" name="lastname" required><br>
+
+                <label>Credit Card Number:</label><br>
+                <input type="text" name="credit card number" required><br>
+
+                <label>CVV:</label><br>
+                <input type="text" name="cvv" required><br>
+
+                <label>Expiry Date:</label><br>
+                <input type="text" placeholder="MM" style="width: 40px;" required>
+                <input type="text" placeholder="YY" style="width: 40px;" required><br><br>
+
+                <label>Choose a package:</label><br>
+                <select id="package" onchange="updatePrice()">
+                    <option selected disabled>Select</option>
+                    <option>Paris Delight</option>
+                    <option>Dubai Adventure</option>
+                    <option>Bali Getaway</option>
+                </select><br>
+
+                <p id="price">Price: -- </p>
+                <input type="submit" class="button" value="Submit">
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Global Explorers Hub</p>
+    </footer>
+</body>
+</html>

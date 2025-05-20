@@ -1,0 +1,96 @@
+body{
+    color: orangered;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: blanchedalmond;
+    text-align: center;
+    height: 100%;
+    background-image: url(images/logo\ 2.jpg);
+    background-size: cover;
+    background-repeat: 0;
+}
+
+h1,h2{
+    color: blue;
+    text-align: center;
+}
+
+h3{
+    color: darkblue;
+    text-align: center;
+}
+
+main{
+    text-align: center;
+    align-items: center;
+}
+
+footer{
+    text-align: center;
+    background-color: darkgray;
+    color: white;
+    position: sticky;
+    width: 100%;
+    align-items: baseline;
+}
+
+footer p{
+    margin:0;
+    font-size: 0.9em;
+}
+
+.package{
+    align-items: center;
+    padding: 20px;
+}
+
+.navbar {
+    background-color: darkblue;
+    text-align: center;
+}
+
+.navbar a {
+    margin: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    text-align: left;
+}
+  
+.navbar a:hover {
+    background-color: orangered;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.booking{
+    background-color: white;
+    text-align: center;
+    display: block;
+    padding: 20px;
+    font-family: 'Times New Roman';
+}
+
+input, select {
+    width: 50%;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-family: 'Times New Roman';
+}
+
+form{
+    background-color: darkblue;
+    color: white;
+    width: 100%;
+}
+
+.button{
+    background-color: white;
+    color: darkblue;
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Times New Roman';
+    font-size: 16px;
+    cursor: pointer;
+}
